@@ -86,7 +86,7 @@ class views_handler_field_megarow_links extends views_handler_field {
     $entity = reset($entities[1]);
     $table_data = views_fetch_data($this->table);
     $entity_type = $table_data['table']['entity type'];
-    list($entity_id) = entity_extract_ids($entity_type, $entity);
+    list($offset) = entity_extract_ids($entity_type, $entity);
 
     // Create an array of links.
     $provided_links = explode("\n", $this->options['megarow']['links']);
