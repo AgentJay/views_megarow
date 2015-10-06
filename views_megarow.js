@@ -26,7 +26,6 @@
    * Display the megarow.
    */
   Drupal.ViewsMegarow.open = function(entityId, target) {
-	  alert(entityId);
     // If there's already a megarow opened for this entity, abort.
     var row_parent_megarow = $(target).parents('tr').next('tr.megarow');
     if (row_parent_megarow != undefined && row_parent_megarow.length > 0) {
